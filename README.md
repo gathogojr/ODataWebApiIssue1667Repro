@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD002 MD041 -->
+
 ## Objective
 Investigate issues [#1667](https://github.com/OData/odata.net/issues/1667) and [#1162](https://github.com/OData/odata.net/issues/1162) reported on [ODL](https://github.com/OData/odata.net) project.
 
