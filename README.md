@@ -12,7 +12,6 @@ Issue affecting filtering ($filter) and ordering ($orderby) in $expand applied t
  - [ ] https://graph.microsoft.com/v1.0/me/drive/root/delta?$expand=microsoft.graph.driveItem/children($orderby=id)
 - Where `delta` and `recent` are both bound Edm functions
 
-
 ### Assemblies in attempt to reproduce the issue:
 - Microsoft.AspNetCore.OData 7.4.1
 - Microsoft.OData.Core 7.6.1
@@ -85,3 +84,7 @@ Verified the following scenarios work okay in an OData Web API service
  - [x] http://localhost:1031/odata/Company/Projects?$expand=Repro.Lib.Models.Project/Manager($expand=Repro.Lib.Models.Employee/Reports($expand=Repro.Lib.Models.Employee/Tasks($select=Description)))
  - [x] http://localhost:1031/odata/Company/Projects?$expand=Repro.Lib.Models.Project/Manager($expand=Repro.Lib.Models.Employee/Reports($expand=Repro.Lib.Models.Employee/Tasks($orderby=Description)))
  - [x] http://localhost:1031/odata/Company/Projects?$expand=Repro.Lib.Models.Project/Manager($expand=Repro.Lib.Models.Employee/Reports($expand=Repro.Lib.Models.Employee/Tasks($filter=contains(Description, 'Install'))))
+ 
+ ## Conclusion
+ It does seem like ODL is behaving as expected and $filter in $expand applied to Edm function does appear to be working okay.
+ 
