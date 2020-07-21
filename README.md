@@ -6,10 +6,10 @@ Investigate issues [#1667](https://github.com/OData/odata.net/issues/1667) and [
 Issue affecting filtering ($filter) and ordering ($orderby) in $expand applied to Edm functions
 
 ### Cases highlighted:
- - [x] https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages/delta?$expand=singleValueExtendedProperties($filter=id eq 'value')
- - [x] https://graph.microsoft.com/v1.0/me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
- - [x] https://graph.microsoft.com/v1.0/me/drive/root/delta?$expand=microsoft.graph.driveItem/children($filter=id eq ‘x’)
- - [x] https://graph.microsoft.com/v1.0/me/drive/root/delta?$expand=microsoft.graph.driveItem/children($orderby=id)
+ - [ ] https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages/delta?$expand=singleValueExtendedProperties($filter=id eq 'value')
+ - [ ] https://graph.microsoft.com/v1.0/me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
+ - [ ] https://graph.microsoft.com/v1.0/me/drive/root/delta?$expand=microsoft.graph.driveItem/children($filter=id eq ‘x’)
+ - [ ] https://graph.microsoft.com/v1.0/me/drive/root/delta?$expand=microsoft.graph.driveItem/children($orderby=id)
 - Where `delta` and `recent` are both bound Edm functions
 
 
