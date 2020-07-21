@@ -86,5 +86,5 @@ Verified the following scenarios work okay in an OData Web API service
  - [x] http://localhost:1031/odata/Company/Projects?$expand=Repro.Lib.Models.Project/Manager($expand=Repro.Lib.Models.Employee/Reports($expand=Repro.Lib.Models.Employee/Tasks($filter=contains(Description, 'Install'))))
  
  ## Conclusion
- It does seem like ODL is behaving as expected and $filter in $expand applied to Edm function does appear to be working okay.
+ It does seem like ODL is behaving as expected and $filter nested in $expand applied to Edm function does appear to be working okay.
  
